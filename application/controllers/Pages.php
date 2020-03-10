@@ -1,9 +1,12 @@
 <?php 
-	class Posts extends CI_Controller{
-		public function index(){
+	class Pages extends CI_Controller{
+		public function view($page = 'home'){
+			if(!file_exists(APPPATH.'views/pages/'.$page.'.php')){
+				show_404();
+			}
 
 			//Title page capital letter to begin with 
-			$data['title'] = 'Latest Posts';
+			$data['title'] = ucfirst($page);
 
 			$this->load->view('templates/header');
 			$this->load->view('pages/'.$page, $data);
