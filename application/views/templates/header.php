@@ -1,35 +1,47 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>PIRKG</title>
-	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/litera/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.css">
-</head>
-<body>
-	<!-- Bar Navigasi -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <a class="navbar-brand" href="<?php echo base_url(); ?>">Navbar</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
+<html lang="en">
 
-	  <div class="collapse navbar-collapse" id="navbarColor03">
-	    <ul class="navbar-nav mr-auto">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="<?php echo base_url(); ?>">Home <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="<?php echo base_url(); ?>about">About</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="<?php echo base_url(); ?>posts">Post</a>
-	      </li>
-	    </ul>
-	    <form class="form-inline my-2 my-lg-0">
-	      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Sign-Up / Login</button>
-	    </form>
-	  </div>
-	</nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pusat Informasi dan Reservasi Kesehatan Gigi</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.css">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <!--Header-->
+  <section id="banner" class="banner">
+    <div class="bg-color">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="col-md-12">
+            <div class="navbar-header">
+              
+              <a class="navbar-brand" href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/logo.png" class="img-responsive" style="width: 10px; margin-top: -6px;"></a>
+			  <p>Pusat KesehaInformasi dan Reservasi Kesehatan Gigi </p>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="<?php echo base_url(); ?>">Beranda</a></li>
+                <li class=""><a href="<?php echo base_url(); ?>">Reservasi</a></li>
+                <li class=""><a href="<?php echo base_url(); ?>">Artikel</a></li>
+                <li class=""><a href="<?php echo base_url(); ?>">Tentang Kami</a></li>
+				<li class=""><a href="<?php echo base_url(); ?>">Sign Up/Login</a></li>
+              </ul>
+			  
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+  </section>
+  <!--/ Header-->
 
 	<!-- Body Container -->
 	<br>
