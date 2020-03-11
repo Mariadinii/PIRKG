@@ -3,6 +3,7 @@
 <head>
 	<title>PIRKG</title>
 	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.css">
 </head>
 <body>
 	<!-- Bar Navigasi -->
@@ -19,6 +20,9 @@
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="<?php echo base_url(); ?>about">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="<?php echo base_url(); ?>posts">Post</a>
 	      </li>
 	    </ul>
 	    <form class="form-inline my-2 my-lg-0">

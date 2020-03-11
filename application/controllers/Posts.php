@@ -5,9 +5,25 @@
 			//Title page capital letter to begin with 
 			$data['title'] = 'Latest Posts';
 
+			$data['posts'] = $this->post_model->get_posts();
+
 			$this->load->view('templates/header');
-			$this->load->view('pages/'.$page, $data);
+			$this->load->view('posts/index', $data);
 			$this->load->view('templates/footer');
 		}
+
+		public function view($pk = NULL){
+			$data['post'] = $this->post_model->get_posts($pk);
+
+			if (empty($data['post'])) {
+				show_404();
+			}
+
+			$data['title'] = $data['post']['judul'];
+
+			$this->load->view('templates/header');
+			$this->load->view('posts/view', $data);
+			$this->load->view('templates/footer');
+		} 
 	}
  ?>
