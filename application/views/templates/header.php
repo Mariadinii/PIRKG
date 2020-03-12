@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pusat Informasi dan Reservasi Kesehatan Gigi</title>
-  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
-  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+  <meta name="description" content="Webiste tentang pentingnya menjaga kesehatan gigi">
+  <meta name="keywords" content="gigi, kesehatan gigi, pelayanan kesehatan gigi, edukasi gigi">
 
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/font-awesome.min.css">
@@ -15,16 +15,20 @@
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-  <!--Header-->
+  <!--banner-->
   <section id="banner" class="banner">
     <div class="bg-color">
-      <nav class="navbar navbar-default navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top"> <!-- Navigasi Bar -->
         <div class="container">
           <div class="col-md-12">
             <div class="navbar-header">
-              
-              <a class="navbar-brand" href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/logo.png" class="img-responsive" style="width: 10px; margin-top: -6px;"></a>
-			  <p>Pusat KesehaInformasi dan Reservasi Kesehatan Gigi </p>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/img/logo_pirkg.png" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>
+              <h3 style="color: white;">Pusat Informasi dan Reservasi Kesehatan Gigi</h3>
             </div>
             <div class="collapse navbar-collapse navbar-right" id="myNavbar">
               <ul class="nav navbar-nav">
@@ -32,14 +36,13 @@
                 <li class=""><a href="<?php echo base_url(); ?>reservasi">Reservasi</a></li>
                 <li class=""><a href="<?php echo base_url(); ?>artikel">Artikel</a></li>
                 <li class=""><a href="<?php echo base_url(); ?>tentang_kami">Tentang Kami</a></li>
-				<li class=""><a href="<?php echo base_url(); ?>">Sign Up/Login</a></li>
+                <li class=""><a href="#l">Sign Up/Login</a></li>
               </ul>
-			  
             </div>
           </div>
         </div>
-      </nav>
-      
+      </nav> <!-- end Navigasi Bar -->
+
       <!-- Header -->
       <div class="container">
         <div class="row">
@@ -55,9 +58,5 @@
         </div>
       </div>
     </div> <!-- end Header -->
-      
   </section>
-  <!--/ Header-->
-
-	<!-- Body Container -->
-
+  <!--/ end banner-->
