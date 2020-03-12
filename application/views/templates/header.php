@@ -29,9 +29,9 @@
             <div class="collapse navbar-collapse navbar-right" id="myNavbar">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="<?php echo base_url(); ?>">Beranda</a></li>
-                <li class=""><a href="<?php echo base_url(); ?>">Reservasi</a></li>
-                <li class=""><a href="<?php echo base_url(); ?>">Artikel</a></li>
-                <li class=""><a href="<?php echo base_url(); ?>">Tentang Kami</a></li>
+                <li class=""><a href="<?php echo base_url(); ?>reservasi">Reservasi</a></li>
+                <li class=""><a href="<?php echo base_url(); ?>artikel">Artikel</a></li>
+                <li class=""><a href="<?php echo base_url(); ?>tentang_kami">Tentang Kami</a></li>
 				<li class=""><a href="<?php echo base_url(); ?>">Sign Up/Login</a></li>
               </ul>
 			  
@@ -40,9 +40,24 @@
         </div>
       </nav>
       
+      <!-- Header -->
+      <div class="container">
+        <div class="row">
+          <div class="banner-info">
+            <div class="banner-logo text-center">
+            </div>
+            <div class="banner-text text-center">
+            </div>
+            <div class="overlay-detail text-center">
+              <a href="#service"><i class="fa fa-angle-down"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end Header -->
+      
   </section>
   <!--/ Header-->
 
 	<!-- Body Container -->
-	<br>
-	<div class="container">
+

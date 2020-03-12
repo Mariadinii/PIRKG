@@ -193,9 +193,13 @@ banner
 /***************************************
 services
 ***************************************/
-.icon i{
+.icon img{
+    margin-left: auto;
+    margin-right: auto;
 	color: #0cb8b6;
 	font-size: 45px;
+    width: 100px;
+    height: 100px;
 	margin-bottom: 25px;
 }
 .service-info{
@@ -210,6 +214,9 @@ services
 /***************************************
 cta-1
 ***************************************/
+#cta-1{
+    background-color: #0fd1cf;
+}
 .schedule-tab {
 	background-color: #0CB8B6;
 	float: left;
@@ -217,11 +224,11 @@ cta-1
 .medi-info{
 	border-right: 1px solid #fff;
 }
-.medi-info, .time-info{
+.medi-info, .end-info{
 	padding: 20px;
 	color: #fff;
 }
-.medi-info h3, .time-info h3{
+.medi-info h3, .end-info h3{
 	padding-bottom: 16px;
 	color: #fff;
 	font-weight: 600;
@@ -241,7 +248,7 @@ td {
     border-top: 1px solid rgba(216, 216, 216, 0.5);
     padding: 6px 10px 6px 0;
 }
-.medi-info, .time-info{
+.medi-info, .end-info{
     font-size: 14px;
 }
 /***************************************
