@@ -8,7 +8,7 @@
               <h4 class="white no-padding">Alamat</h4>
             </div>
             <div class="info-sec">
-              <p>Jl. Jagabaya No. 23 Kedaton, Bandar Lampung</p>
+              <p>Jl. Kiwi No. 18 Kedaton, Bandar Lampung</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-4 marb20">
