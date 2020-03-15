@@ -6,7 +6,7 @@
 */
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans',Poppins-Regular;
 	line-height: 20px;
 	color: #999999;
 	font-size: 300;
@@ -29,17 +29,19 @@ table {
 }
 h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', Poppins-Regular;
 	font-weight: 600;
 	color: #222222;
 }
 a, a:hover, a:focus, a:active{
     outline: none;
 }
-
+warna{
+    background-color: #ededed;
+}
 .section-padding{
-	padding: 60px 0px;
-
+    padding: 60px 0px;
+   
 }
 h2 {
     line-height: 20px;
@@ -56,7 +58,25 @@ hr.botm-line {
     border: 0;
     margin: 20px 0 20px 0;
 }
+hr.botm-line1 {
+        height: 3px;
+        width: 60px;
+        
+        position: relative;
+        border: 0;
+        margin: 20px 0 20px 0;
+}
+hr.botm-line2 {
+    height: 1px;
+    width: 850px;
+    background: rgb(247, 246, 246);
+    border: 20px;
+    
 
+}
+.padding {
+    padding: 3px 8px;
+}
 /***************************************
 banner
 ***************************************/
@@ -165,7 +185,7 @@ banner
 	color: #fff;
 }
 .banner-text h1{
-	font-family: 'Candal', sans-serif;
+	font-family: 'Candal', Poppins-Regular;
 	font-size: 35px;
 	text-transform: uppercase;
 	padding-bottom:15px;
@@ -215,14 +235,15 @@ services
 cta-1
 ***************************************/
 #cta-1{
-    background-color: #0fd1cf;
+    background-color: 1cf #fff;
 }
 .schedule-tab {
 	background-color: #0CB8B6;
 	float: left;
 }
 .medi-info{
-	border-right: 1px solid #fff;
+    border-right: 1px solid #fff;
+
 }
 .medi-info, .end-info{
 	padding: 20px;
@@ -243,6 +264,9 @@ cta-1
     font-weight: 400 !important;
     cursor: pointer;
 }
+
+
+
 td {
     border: 0px solid #ededed;
     border-top: 1px solid rgba(216, 216, 216, 0.5);
@@ -251,6 +275,7 @@ td {
 .medi-info, .end-info{
     font-size: 14px;
 }
+
 /***************************************
 about
 ***************************************/
@@ -519,7 +544,7 @@ footer
         margin-bottom: 30px;
     }
     .medi-info {
-    border: 0px;
+    border: px;
     border-bottom: 1px solid #fff;
     }
     .service-info{
