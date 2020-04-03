@@ -32,9 +32,9 @@
             </div>
             <div class="collapse navbar-collapse navbar-right" id="myNavbar">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="<?php echo base_url(); ?>">Beranda</a></li>
+                <li class=""><a href="<?php echo base_url(); ?>">Beranda</a></li> <!-- class="active" untuk mengaktiftan bar -->
                 <li class=""><a href="<?php echo base_url(); ?>reservasi">Reservasi</a></li>
-                <li class=""><a href="<?php echo base_url(); ?>artikel">Artikel</a></li>
+                <li class=""><a href="<?php echo base_url(); ?>posts">Artikel</a></li>
                 <li class=""><a href="<?php echo base_url(); ?>tentang_kami">Tentang Kami</a></li>
                 <li class=""><a href="#l">Sign Up/Login</a></li>
               </ul>

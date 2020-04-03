@@ -4,14 +4,14 @@
 			$this->load->database();
 		}
 
-		public function get_posts($pk = FALSE){
-			if ($pk === FALSE) {
-				$query = $this->db->get('test');
+		public function get_posts($id_artikel = FALSE){
+			if ($id_artikel === FALSE) {
+				$query = $this->db->get('artikel');
 				return $query->result_array();
 			}
 
 			//'test' adalah table yang dipiilih
-			$query = $this->db->get_where('test', array('pk' => $pk));
+			$query = $this->db->get_where('artikel', array('id_artikel' => $id_artikel));
 			return $query->row_array();
 		}
 	}

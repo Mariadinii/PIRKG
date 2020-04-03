@@ -3,7 +3,7 @@
 		public function index(){
 
 			//Title page capital letter to begin with 
-			$data['title'] = 'Latest Posts';
+			$data['title'] = 'Artikel Seputar Gigi ';
 
 			$data['posts'] = $this->post_model->get_posts();
 
@@ -12,8 +12,8 @@
 			$this->load->view('templates/footer');
 		}
 
-		public function view($pk = NULL){
-			$data['post'] = $this->post_model->get_posts($pk);
+		public function view($id_artikel = NULL){
+			$data['post'] = $this->post_model->get_posts($id_artikel);
 
 			if (empty($data['post'])) {
 				show_404();
