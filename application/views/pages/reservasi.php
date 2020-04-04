@@ -1,3 +1,10 @@
+<!-- Jika bmum login maka tidak akan mengeluarkan form login-->
+<?php if(!$this->session->userdata('logged_in')): ?>
+  <h2 class="ser-title" style="text-align: center;">Anda Harus Login Jika Ingin Mengisi Form Reservasi</h2>
+<?php endif; ?>
+
+<!-- Jika sudah login maka akan mengeluarkan form reservasi-->
+<?php if($this->session->userdata('logged_in')): ?>
 <!--form reservasi-->
 <section id="contact" class="section-padding">
   <div class="container">
@@ -64,6 +71,8 @@
   </div>
 </section>
 <!-- / form reservasi-->
+<?php endif; ?>
+
 <!-- Tabel Reservasi -->
 <section id="about" class="section-padding">
   <div class="container">

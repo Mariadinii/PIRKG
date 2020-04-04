@@ -31,7 +31,7 @@
 			<br>
 			<br>
 			<span class="text2">
-				Anda sudah punya akun?<a href="#"> Masuk</a>
+				Anda sudah punya akun?<a href="<?php echo base_url(); ?>users/login"> Masuk</a>
 			</span>		
 		<?php echo form_close(); ?>
 	</div>
