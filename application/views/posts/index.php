@@ -15,7 +15,7 @@
             <div class="medi-info">
               <h5><?php echo $post['waktu']; ?></h5>
               <h3><?php echo $post['judul']; ?></h3>
-              <p><?php echo $post['isi']; ?></p>
+              <p><?php echo word_limiter($post['isi'], 60); ?></p>
               <a href="<?php echo site_url('/posts/'.$post['id_artikel']); ?>" class="medi-info-btn">Selengkapnya</a>
             </div>
              <hr class="botm-line2"></h>

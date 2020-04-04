@@ -1,4 +1,4 @@
-
+<!--udah gadipake, sekarang make file posts/index atau posts/view-->
 <!--cta-->
 <section id="cta-1" class="section-padding">
     <div class="container">
