@@ -32,11 +32,19 @@
             </div>
             <div class="collapse navbar-collapse navbar-right" id="myNavbar">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="<?php echo base_url(); ?>">Beranda</a></li>
+                <li class=""><a href="<?php echo base_url(); ?>">Beranda</a></li> <!-- class="active" untuk mengaktiftan bar -->
                 <li class=""><a href="<?php echo base_url(); ?>reservasi">Reservasi</a></li>
-                <li class=""><a href="<?php echo base_url(); ?>artikel">Artikel</a></li>
+                <li class=""><a href="<?php echo base_url(); ?>posts">Artikel</a></li>
                 <li class=""><a href="<?php echo base_url(); ?>tentang_kami">Tentang Kami</a></li>
-                <li class=""><a href="#l">Sign Up/Login</a></li>
+
+                <?php if(!$this->session->userdata('logged_in')): ?>
+                  <li class=""><a href="<?php echo base_url(); ?>users/register">Sign Up/Login</a></li>
+                <?php endif; ?>
+                <?php if($this->session->userdata('logged_in')): ?>
+                  <li class=""><a href="<?php echo base_url(); ?>users/profile">Profil</a></li>
+                  <li class=""><a href="<?php echo base_url(); ?>users/logout">Logout</a></li>
+                <?php endif; ?>
+
               </ul>
             </div>
           </div>
@@ -60,3 +68,19 @@
     </div> <!-- end Header -->
   </section>
   <!--/ end banner-->
+
+  <!-- Flash Messages -->
+  <br><br>
+  <div class="container">
+    <?php if($this->session->flashdata('user_registered')): ?>
+      <?php echo '<p class="alert alert-success">'.$this->session->flashdata('user_registered').'</p>'; ?>
+    <?php endif; ?>
+
+    <?php if($this->session->flashdata('user_loggedin')): ?>
+      <?php echo '<p class="alert alert-success">'.$this->session->flashdata('user_loggedin').'</p>'; ?>
+    <?php endif; ?>
+
+    <?php if($this->session->flashdata('user_loggedout')): ?>
+      <?php echo '<p class="alert alert-success">'.$this->session->flashdata('user_loggedout').'</p>'; ?>
+    <?php endif; ?>
+  </div>
