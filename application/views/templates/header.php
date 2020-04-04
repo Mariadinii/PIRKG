@@ -36,7 +36,7 @@
                 <li class=""><a href="<?php echo base_url(); ?>reservasi">Reservasi</a></li>
                 <li class=""><a href="<?php echo base_url(); ?>posts">Artikel</a></li>
                 <li class=""><a href="<?php echo base_url(); ?>tentang_kami">Tentang Kami</a></li>
-                <li class=""><a href="#l">Sign Up/Login</a></li>
+                <li class=""><a href="<?php echo base_url(); ?>users/register">Sign Up/Login</a></li>
               </ul>
             </div>
           </div>
@@ -60,3 +60,11 @@
     </div> <!-- end Header -->
   </section>
   <!--/ end banner-->
+
+  <!-- Flash Messages -->
+  <br><br>
+  <div class="container">
+    <?php if($this->session->flashdata('user_registered')): ?>
+      <?php echo '<p class="alert alert-success">'.$this->session->flashdata('user_registered').'</p>'; ?>
+    <?php endif; ?>
+  </div>
