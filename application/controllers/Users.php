@@ -67,7 +67,12 @@
 
 		//User Profile
 		public function profile(){
-			$data['title'] = 'User Profile';
+			
+			$data['user'] = $this->db->get_where('pengguna', ['id_pengguna' => $this->session->userdata('id_pengguna')])->row_array();
+
+			if (empty($data['user'])) {
+				show_404();
+			}
 
 			$this->load->view('templates/header');
 			$this->load->view('users/profile', $data);

@@ -1,4 +1,6 @@
 <div class="container">
+
+<br><br>
 <!-- Profile dibuat hafid-->
 <div class="profile__container">
   <div class="profile__body">
@@ -7,10 +9,9 @@
         <div class="card__content-header">
           <div class="card__content-profile">
             <div class="card__content-profile-details">
-              <span class="card__content-profile-name">Hi, M. Hafidh Dliyaul Haq</span>
+              <span class="card__content-profile-name"><?php echo $user['nama']; ?></span>
             </div>
           </div>
-          <a class="card__content-header-link" href="#">Kembali</a>
         </div>
         <h1 class="card__content-title">Tinjauan Akun</h1>
         <p class="card__content-body">Profil</p>
@@ -20,16 +21,19 @@
           <tbody>
             <tr>
               <td>Email</td>
-              <td class="card__body">mhafidh11@gmail.com</td>
+              <td class="card__body"><?php echo $user['email']; ?></td>
             </tr>
             <tr>
               <td>No. Telepon</td>
-              <td class="card__body">08137976xxxx</td>
+              <td class="card__body"><?php echo $user['no_tlp']; ?></td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
   </div>
-</div> 
+</div>
+<!-- End profile -->
+<br><br><br><br>
+
 </div>

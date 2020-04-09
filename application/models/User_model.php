@@ -1,7 +1,7 @@
 <?php 
 	class User_model extends CI_Model{
 		public function register($enc_password){
-			//User data arrya
+			//User data array
 			$data = array(
 				'nama' => $this->input->post('nama'),
 				'password' => $enc_password,
@@ -47,5 +47,6 @@
 				return false;
 			}
 		}
+		
 	}
  ?>
