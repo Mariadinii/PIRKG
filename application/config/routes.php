@@ -50,9 +50,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
-//
+//Mavigasi Halaman Selengkapnya Artikel
 $route['posts/(:any)'] = 'posts/view/$1';
-//
+//Navigasi Halaman Awal Artikel
 $route['posts'] = 'posts/index';
 //Navigasi tampilan awal website
 $route['default_controller'] = 'pages/view';
@@ -60,3 +60,6 @@ $route['default_controller'] = 'pages/view';
 $route['(:any)'] = 'pages/view/$1';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+//Navigasi Admin
+$route['admins'] = 'admins/reservation';
