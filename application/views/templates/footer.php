@@ -59,5 +59,9 @@
   <script src="<?php echo base_url(); ?>assets/js/custom.js"></script>
   <script src="<?php echo base_url(); ?>assets/contactform/contactform.js"></script>
 
+  <!-- Date Time Picker -->
+  <script src="<?php echo base_url(); ?>assets/datetimepicker/libraries/moment/moment.min.js"></script>
+  <script src="<?php echo base_url(); ?>assets/datetimepicker/libraries/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+
 </body>
 </html>

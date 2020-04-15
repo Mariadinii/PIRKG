@@ -12,6 +12,10 @@
   <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.css">
+
+  <!-- Date Time Picker -->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/datetimepicker/libraries/fontawesome/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/datetimepicker/libraries/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
