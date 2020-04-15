@@ -43,23 +43,19 @@
             <div class="form-group">
 	          <div class="row">
 	        	<div class='col-sm-6'>
-	              <div class="form-group">
-	                <div class='input-group date' id='datetimepicker1'>
-	                  <input type='text' class="form-control" />
-	                  <span class="input-group-addon">
-	                    <span class="glyphicon glyphicon-calendar"></span>
-	                  </span>
-	                </div>
+	            <div class="form-group">
+	              <div class='input-group'>
+	                <input type='text' name="datetime" class="form-control datetimepicker-input" id="datetimepicker5" data-toggle="datetimepicker" data-target="#datetimepicker5" placeholder="Tanggal & Waktu" />
 	              </div>
 	            </div>
-	        	<script type="text/javascript">
-	              $(function () {
-	                $('#datetimepicker1').datetimepicker();
-	              });
-	        	</script>
+	          </div>
+            <script>
+              $(function(){
+                $('#datetimepicker5').datetimepicker();
+              });
+            </script>
 	    	  </div>
 	    	</div>
-	    	
             <div class="form-action">
               <button type="submit" class="btn btn-form">Kirim</button>
             </div>
