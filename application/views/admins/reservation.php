@@ -17,7 +17,7 @@
           <div id="errormessage"></div>
 
           <!-- Start Form -->
-          <<?php echo form_open('admins/reservation'); ?>
+          <?php echo form_open('admins/reservation'); ?>
 
             <!-- Nama -->
             <label>Nama: </label>
@@ -90,7 +90,70 @@
   <h2 class="ser-title" style="text-align: center;">Anda Harus Login Jika Ingin Mengisi Form Reservasi</h2>
 <!-- TAMPILAN ADMIN -->
 <?php elseif($this->session->userdata('logged_in') && ($this->session->userdata('nama') == 'admin')): ?>
-  <h2 class="ser-title" style="text-align: center;">TAMPILAN ADMIN TAPI BLOM JADI</h2>
+<section id="about" class="section-padding">
+  <div class="container">
+    <div class="col-md-12">
+      <h2 class="ser-title">Daftar Reservasi</h2>
+      <hr class="botm-line">
+    </div>
+    <div class="col-md-0"></div>
+    <div class="col-md-12">
+      <div class="time-info">
+        <table style="margin: 8px -200px 0px;" border="1">
+          <thead>
+            <tr>
+              <th> No </th>
+              <th> Nama </th>
+              <th> Umur </th>
+              <th> No. Telepon </th>
+              <th> Jenis Kelamin </th>
+              <th> Keterangan Reservasi </th>
+              <th> Waktu Reservasi </th>
+              <th> Konfirmasi </th>
+              <th> Keterangan </th>
+              <th> Aksi </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr></tr>
+            <?php 
+              date_default_timezone_set('Asia/Jakarta');
+            ?>
+            <?php $i=0; ?>
+            <?php foreach ($admins as $admin) : ?>
+              <?php $i++; ?>
+            <tr>
+              <td>&nbsp;&nbsp;<?php echo $i; ?></td>
+              <td><?php echo $admin['nama']; ?></td> 
+              <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $admin['umur']; ?></td>
+              <td>&nbsp; <?php ?></td> 
+              <td>&nbsp;&nbsp;<?php echo $admin['jenis_kelamin']; ?></td>
+              <td><?php echo $admin['ket_reservasi']; ?></td>
+              <td><?php echo $admin['waktu_reservasi']; ?></td>
+              <td><?php echo $admin['konfirmasi']; ?></td>
+              <td>&nbsp;
+                <?php  
+                  if ($admin['konfirmasi'] === 'Diterima' || $admin['konfirmasi'] === 'Menunggu Konfirmasi') {
+                     echo $admin['keterangan_reservasi'];
+                  }else{
+                    echo "Info Tidak Valid";
+                  }
+                ?>
+              </td>
+              <td>
+                <a href='' class="medi-info-btn">Edit</a>
+                
+                <a href='' class="medi-info-btn">Delete</a>
+              </td>
+            </tr>
+            <?php endforeach; ?>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</section>
 <?php endif; ?>
 
 <!-- Tabel Reservasi -->
