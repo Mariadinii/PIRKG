@@ -14,8 +14,6 @@
   <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.css">
 
   <!-- Date Time Picker -->
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/datetimepicker/libraries/fontawesome/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/datetimepicker/libraries/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -86,5 +84,9 @@
 
     <?php if($this->session->flashdata('user_loggedout')): ?>
       <?php echo '<p class="alert alert-success">'.$this->session->flashdata('user_loggedout').'</p>'; ?>
+    <?php endif; ?>
+
+    <?php if($this->session->flashdata('user_reservation')): ?>
+      <?php echo '<p class="alert alert-success">'.$this->session->flashdata('user_reservation').'</p>'; ?>
     <?php endif; ?>
   </div>

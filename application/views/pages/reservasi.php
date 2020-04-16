@@ -14,33 +14,49 @@
           <div class="space"></div>
           <div id="sendmessage">Reservasi Anda sudah Kami terima. Mohon tunggu konfirmasi selanjutnya.</div>
           <div id="errormessage"></div>
+
           <form action="" method="post" role="form" class="contactForm">
+
+            <!-- Nama -->
+            <label>Nama: </label>
             <div class="form-group">
-              <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Nama" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <input type="text" name="nama" class="form-control br-radius-zero" id="name" placeholder="Nama" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
               <div class="validation"></div>
             </div>
+            
+            <!-- Umur -->
+            <label>Umur: </label>
             <div class="form-group">
-              <input type="number" class="form-control br-radius-zero" name="age" id="age" placeholder="Umur" data-rule="minlen:1" data-msg="Please enter a number" />
+              <input type="number" class="form-control br-radius-zero" name="umur" id="age" placeholder="Umur" data-rule="minlen:1" data-msg="Please enter a number" />
               <div class="validation"></div>
             </div>
+
+            <!-- Jenis Kelamin -->
+            <label>Jenis Kelamin: </label>
             <div class="form-group">
               <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" class="custom-control-input" id="lk" name="jeniskelamin" value="Laki-laki">
-                <label class="custom-control-label" for="lk">Laki-laki</label>
-                <input type="radio" class="custom-control-input" id="pr" name="jeniskelamin" value="Perempuan">
+                <input type="radio" class="custom-control-input" id="lk" name="jenis_kelamin" value="Laki-Laki">
+                <label class="custom-control-label" for="lk">Laki-Laki &nbsp; </label>
+                <input type="radio" class="custom-control-input" id="pr" name="jenis_kelamin" value="Perempuan">
                 <label class="custom-control-label" for="pr">Perempuan</label>
               </div>
             </div>
+
+            <!-- Keterangan reservasi -->
+            <label>Keterangan Reservasi: </label>
             <div class="form-group">
-              <textarea class="form-control br-radius-zero" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Keluhan Penyakit"></textarea>
+              <textarea class="form-control br-radius-zero" name="ket_reservasi" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Keluhan Penyakit"></textarea>
               <div class="validation"></div>
             </div>
+
+            <!-- Waktu reservasi -->
+            <label>Waktu Reservasi: </label>
             <div class="form-group">
 	          <div class="row">
 	        	<div class='col-sm-6'>
 	            <div class="form-group">
 	              <div class='input-group'>
-	                <input type='text' name="datetime" class="form-control datetimepicker-input" id="datetimepicker5" data-toggle="datetimepicker" data-target="#datetimepicker5" placeholder="Tanggal & Waktu" />
+	                <input type='text' name="waktu_reservasi" class="form-control datetimepicker-input" id="datetimepicker5" data-toggle="datetimepicker" data-target="#datetimepicker5" placeholder="Tanggal & Waktu" />
 	              </div>
 	            </div>
 	          </div>
@@ -49,11 +65,14 @@
                 $('#datetimepicker5').datetimepicker();
               });
             </script>
-	    	  </div>
-	    	</div>
+	    	    </div>
+	    	    </div>
+
+            <!-- Send Button -->
             <div class="form-action">
-              <button type="submit" class="btn btn-form">Kirim</button>
+              <button type="submit" class="btn btn-form">Pesan Reservasi</button>
             </div>
+
           </form>
         </div>
       </div>

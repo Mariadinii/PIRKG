@@ -7,9 +7,28 @@
 
 			$data['admins'] = $this->admin_model->get_reservations();
 
-			$this->load->view('templates/header');
-			$this->load->view('admins/reservation', $data);
-			$this->load->view('templates/footer');
+			$this->form_validation->set_rules('nama', 'Nama', 'required');
+			$this->form_validation->set_rules('umur', 'Umur', 'required');
+			$this->form_validation->set_rules('jenis_kelamin', 'Jenis Kelamin', 'required');
+			$this->form_validation->set_rules('ket_reservasi', 'Keterangan Reservasi', 'required');
+			$this->form_validation->set_rules('waktu_reservasi', 'Waktu Reservasi', 'required');
+
+			if ($this->form_validation->run() === FALSE) {
+				$this->load->view('templates/header');
+				$this->load->view('admins/reservation', $data);
+				$this->load->view('templates/footer');
+			}else{
+				$id_pengguna = $this->session->userdata('id_pengguna');
+				$konfirmasi = 'Menunggu Konfirmasi';
+				$keterangan_reservasi = 'Belum Dilayani';
+
+				$this->admin_model->reservasi($id_pengguna, $konfirmasi, $keterangan_reservasi);
+
+				//Set message 
+				$this->session->set_flashdata('user_reservation', 'Reservasi Anda sudah Kami terima. Mohon tunggu konfirmasi selanjutnya.');
+
+				redirect('');
+			}
 		}
 
 		// public function view($id_artikel = NULL){
