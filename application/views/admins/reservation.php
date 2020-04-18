@@ -126,12 +126,18 @@
               <td>&nbsp;&nbsp;<?php echo $i; ?></td>
               <td><?php echo $admin['nama']; ?></td> 
               <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $admin['umur']; ?></td>
-              <td>&nbsp; <?php ?></td> 
+              <td>&nbsp; <?php 
+                foreach ($users as $user) {
+                  if ($user['id_pengguna'] === $admin['id_pengguna']) {
+                    echo $user['no_tlp'];
+                  }
+                }
+              ?></td> 
               <td>&nbsp;&nbsp;<?php echo $admin['jenis_kelamin']; ?></td>
               <td><?php echo $admin['ket_reservasi']; ?></td>
               <td><?php echo $admin['waktu_reservasi']; ?></td>
               <td><?php echo $admin['konfirmasi']; ?></td>
-              <td>&nbsp;
+              <td>
                 <?php  
                   if ($admin['konfirmasi'] === 'Diterima' || $admin['konfirmasi'] === 'Menunggu Konfirmasi') {
                      echo $admin['keterangan_reservasi'];
@@ -141,9 +147,13 @@
                 ?>
               </td>
               <td>
-                <a href='' class="medi-info-btn">Edit</a>
-                
-                <a href='' class="medi-info-btn">Delete</a>
+                <?php echo form_open('admins/edit/'.$admin['id_reservasi']); ?>
+                  <input type="submit" value="Edit" class="btn btn-warning">
+                </form>
+                <br>
+                <?php echo form_open('admins/delete/'.$admin['id_reservasi']); ?>
+                  <input type="submit" value="Delete" class="btn btn-danger">
+                </form>
               </td>
             </tr>
             <?php endforeach; ?>

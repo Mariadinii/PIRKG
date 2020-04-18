@@ -63,3 +63,4 @@ $route['translate_uri_dashes'] = FALSE;
 
 //Navigasi Admin
 $route['admins'] = 'admins/reservation';
+$route['admins/update'] = 'admins/update';
