@@ -35,7 +35,7 @@
             <div class="collapse navbar-collapse navbar-right" id="myNavbar">
               <ul class="nav navbar-nav">
                 <li class=""><a href="<?php echo base_url(); ?>">Beranda</a></li> <!-- class="active" untuk mengaktiftan bar -->
-                <li class=""><a href="<?php echo base_url(); ?>reservasi">Reservasi</a></li>
+                <li class=""><a href="<?php echo base_url(); ?>admins/reservation">Reservasi</a></li>
                 <li class=""><a href="<?php echo base_url(); ?>posts">Artikel</a></li>
                 <li class=""><a href="<?php echo base_url(); ?>tentang_kami">Tentang Kami</a></li>
 
