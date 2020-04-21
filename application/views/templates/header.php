@@ -14,8 +14,6 @@
   <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.css">
 
   <!-- Date Time Picker -->
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/datetimepicker/libraries/fontawesome/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/datetimepicker/libraries/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -37,7 +35,7 @@
             <div class="collapse navbar-collapse navbar-right" id="myNavbar">
               <ul class="nav navbar-nav">
                 <li class=""><a href="<?php echo base_url(); ?>">Beranda</a></li> <!-- class="active" untuk mengaktiftan bar -->
-                <li class=""><a href="<?php echo base_url(); ?>reservasi">Reservasi</a></li>
+                <li class=""><a href="<?php echo base_url(); ?>admins/reservation">Reservasi</a></li>
                 <li class=""><a href="<?php echo base_url(); ?>posts">Artikel</a></li>
                 <li class=""><a href="<?php echo base_url(); ?>tentang_kami">Tentang Kami</a></li>
 
@@ -86,5 +84,9 @@
 
     <?php if($this->session->flashdata('user_loggedout')): ?>
       <?php echo '<p class="alert alert-success">'.$this->session->flashdata('user_loggedout').'</p>'; ?>
+    <?php endif; ?>
+
+    <?php if($this->session->flashdata('user_reservation')): ?>
+      <?php echo '<p class="alert alert-success">'.$this->session->flashdata('user_reservation').'</p>'; ?>
     <?php endif; ?>
   </div>
