@@ -39,6 +39,13 @@
 			redirect('admins/reservation');
 		}
 
+
+		//Edit Keterangan
+		public function edit_dokter($id_pengguna){
+			$this->admin_model->update_dokter($id_pengguna);
+			redirect('admins/reservation');
+		}
+
 		//Edit Reservasi
 		public function edit($id_reservasi){
 			$data['admins'] = $this->admin_model->get_reservations($id_reservasi);
