@@ -50,6 +50,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
+//Navigasi Halaman Membuat Artikel
+$route['posts/create'] = 'posts/create';
 //Mavigasi Halaman Selengkapnya Artikel
 $route['posts/(:any)'] = 'posts/view/$1';
 //Navigasi Halaman Awal Artikel

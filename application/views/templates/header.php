@@ -42,8 +42,11 @@
                 <?php if(!$this->session->userdata('logged_in')): ?>
                   <li class=""><a href="<?php echo base_url(); ?>users/register">Sign Up/Login</a></li>
                 <?php endif; ?>
-                <?php if($this->session->userdata('logged_in')): ?>
+                <?php if($this->session->userdata('logged_in') && ($this->session->userdata('nama') !== 'admin')): ?>
                   <li class=""><a href="<?php echo base_url(); ?>users/profile">Profil</a></li>
+                  <li class=""><a href="<?php echo base_url(); ?>users/logout">Logout</a></li>
+                <?php elseif($this->session->userdata('logged_in') && ($this->session->userdata('nama') == 'admin')): ?>
+                  <li class=""><a href="<?php echo base_url(); ?>posts/create">Buat Artikel</a></li>
                   <li class=""><a href="<?php echo base_url(); ?>users/logout">Logout</a></li>
                 <?php endif; ?>
 

@@ -25,5 +25,27 @@
 			$this->load->view('posts/view', $data);
 			$this->load->view('templates/footer');
 		} 
+
+		public function create(){
+			$data['title'] = 'Membuat Artikel';
+
+			$this->form_validation->set_rules('judul', 'Judul Artikel', 'required');
+			$this->form_validation->set_rules('isi', 'Isi Artikel', 'required');
+
+			if ($this->form_validation->run() === FALSE) {
+				$this->load->view('templates/header');
+				$this->load->view('posts/create', $data);
+				$this->load->view('templates/footer');
+			}else{
+				$this->post_model->create_post();
+
+				redirect('posts');
+			}	
+		}
+
+		public function delete($id_artikel){
+			$this->post_model->delete_post($id_artikel);
+			redirect('posts');
+		}
 	}
  ?>
