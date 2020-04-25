@@ -60,5 +60,14 @@
 			$this->db->where('id_reservasi', $this->input->post('id_reservasi'));
 			return $this->db->update('reservasi', $dataaa);
 		}
+
+		public function update_dokter($id_pengguna){
+			$data = array(
+				'admin_dokter' => $this->input->post('admin_dokter')
+			);
+
+			$this->db->where('id_pengguna', $id_pengguna);
+			return $this->db->update('pengguna', $data);
+		}
 	}
  ?>

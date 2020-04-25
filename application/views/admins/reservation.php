@@ -160,10 +160,21 @@
           </tbody>
         </table>
       </div>
+      <br>  
     </div>
-    <div class="col-md-3"></div>
+    
+    <!-- Keterangan kehadiran dokter-->
+    <?php echo form_open('admins/edit_dokter/14') ?>
+      <input type="radio" name="admin_dokter" value="hadir"> Dokter Hadir
+      <input type="radio" name="admin_dokter"  value="tidak hadir"> Dokter Tidak Hadir
+      &nbsp;&nbsp;<input type="submit" value="Ubah Keterangan">
+    <?php echo form_close()?>
+    
+    <div class="col-md-3"></div>  
   </div>
 </section>
+
+
 <?php endif; ?>
 
 <!-- Tabel Reservasi -->
@@ -211,23 +222,23 @@
               </td>
             </tr>
             <?php endforeach; ?>
-            <!-- <tr>
-              <td>02</td>
-              <td>Diza Febriyan</td>
-              <td>15 Maret 2020 17.00</td>
-              <td>Diterima</td>
-            </tr>
-            <tr>
-              <td>03</td>
-              <td>Nurul Azizah</td>
-              <td>15 Maret 2020 18.30</td>
-              <td>Menunggu Konfirmasi</td>
-            </tr> -->
           </tbody>
         </table>
       </div>
     </div>
     <div class="col-md-3"></div>
   </div>
+  <?php 
+    foreach ($users as $user) {
+      if ($user['id_pengguna'] ==='14') {
+        if ($user['admin_dokter'] === 'hadir') {
+           echo '<h1 style="text-align: center;">Dokter Hadir</h1>';
+        }else{
+           echo '<h1 style="text-align: center;">Dokter Tidak Hadir</h1>';
+        }
+      }
+    }
+   ?>
 </section>
-<!--/ tabel reservasi
+<!-- /tabel reservasi-->
+
