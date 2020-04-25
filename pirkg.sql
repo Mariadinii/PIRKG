@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 04, 2020 at 06:01 PM
+-- Generation Time: Apr 25, 2020 at 01:13 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.3.14
 
@@ -70,15 +70,20 @@ CREATE TABLE `pengguna` (
   `password` varchar(50) NOT NULL,
   `email` varchar(255) NOT NULL,
   `waktu` timestamp NOT NULL DEFAULT current_timestamp(),
-  `no_tlp` varchar(255) NOT NULL
+  `no_tlp` varchar(255) NOT NULL,
+  `admin_dokter` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `pengguna`
 --
 
-INSERT INTO `pengguna` (`id_pengguna`, `nama`, `password`, `email`, `waktu`, `no_tlp`) VALUES
-(9, 'joshua', '202cb962ac59075b964b07152d234b70', 'joshua.anrico30@gmail.com', '2020-04-04 15:41:58', '123');
+INSERT INTO `pengguna` (`id_pengguna`, `nama`, `password`, `email`, `waktu`, `no_tlp`, `admin_dokter`) VALUES
+(9, 'joshua', '202cb962ac59075b964b07152d234b70', 'joshua.anrico30@gmail.com', '2020-04-04 15:41:58', '123', NULL),
+(10, 's', '202cb962ac59075b964b07152d234b70', 'joshua.anrico3@gmail.com', '2020-04-09 03:12:59', '123', NULL),
+(11, 'j', '202cb962ac59075b964b07152d234b70', 'joshua.anrico@gmail.com', '2020-04-09 04:07:31', '123', NULL),
+(12, 'josh', '202cb962ac59075b964b07152d234b70', 'joshua@gmail.com', '2020-04-11 06:44:28', '123', NULL),
+(14, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'joshuaanrico@yahoo.com', '2020-04-14 06:17:16', 'admin', 'tidak hadir');
 
 -- --------------------------------------------------------
 
@@ -88,10 +93,25 @@ INSERT INTO `pengguna` (`id_pengguna`, `nama`, `password`, `email`, `waktu`, `no
 
 CREATE TABLE `reservasi` (
   `id_reservasi` int(11) NOT NULL,
-  `waktu_reservasi` datetime NOT NULL,
-  `ket_reservasi` varchar(255) NOT NULL,
-  `id_admin` int(11) NOT NULL
+  `nama` varchar(255) NOT NULL,
+  `umur` int(2) NOT NULL,
+  `jenis_kelamin` varchar(20) NOT NULL,
+  `ket_reservasi` text NOT NULL,
+  `waktu_reservasi` varchar(255) NOT NULL,
+  `konfirmasi` varchar(20) NOT NULL,
+  `id_pengguna` int(11) NOT NULL,
+  `keterangan_reservasi` varchar(50) NOT NULL,
+  `slug` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `reservasi`
+--
+
+INSERT INTO `reservasi` (`id_reservasi`, `nama`, `umur`, `jenis_kelamin`, `ket_reservasi`, `waktu_reservasi`, `konfirmasi`, `id_pengguna`, `keterangan_reservasi`, `slug`) VALUES
+(15, 'joshua', 21, 'Laki-Laki', 'teeeeeeeeeeeeeeeeeest', '04/23/2020 7:24 AM', 'Diterima', 9, 'Belum Dilayani', ''),
+(16, 'Jooo', 32, 'Laki-Laki', 'uqewyi uqweyiuqw yeiuqw yeiuqy ew', '04/23/2020 12:37 PM', 'Diterima', 9, 'Belum Dilayani', ''),
+(17, 'Laurensius Joshua Anrico Agustinus', 20, 'Laki-Laki', 'test test test test test test test test  test test test test test  test test test test test  test test test test test  test test test test test ', '04/22/2020 3:04 PM', 'Menunggu Konfirmasi', 9, 'Belum Dilayani', '');
 
 -- --------------------------------------------------------
 
@@ -163,19 +183,19 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `artikel`
 --
 ALTER TABLE `artikel`
-  MODIFY `id_artikel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_artikel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `pengguna`
 --
 ALTER TABLE `pengguna`
-  MODIFY `id_pengguna` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_pengguna` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `reservasi`
 --
 ALTER TABLE `reservasi`
-  MODIFY `id_reservasi` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_reservasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `test`
