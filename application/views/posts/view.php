@@ -1,4 +1,6 @@
 <!--masih belum ada cssnya -->
+<div class="container">
+
 <h2><?php echo $post['judul']; ?></h2>
 <small class="post-date">Posted on: <?php echo $post['waktu']; ?></small>
 <div class="post-body">
@@ -12,3 +14,5 @@
 	<input type="submit" value="Delete" class="btn btn-danger">
 </form>
 <?php endif; ?>
+
+</div>
