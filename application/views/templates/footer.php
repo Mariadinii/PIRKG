@@ -30,8 +30,8 @@
             </div>
             <div class="info-sec">
               <ul class="social-icon">
-                <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
-                <li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+                <li class="bglight-blue" onclick="location.href='http://google.com';"><i class="fa fa-facebook"></i></li>
+                <li class="bglight-blue" onclick="location.href='http://google.com';"><i class="fa fa-twitter"></i></li>
               </ul>
             </div>
           </div>
