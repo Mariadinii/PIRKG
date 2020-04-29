@@ -25,9 +25,9 @@
 
         </div>
       </div>
-      <div class="banner-text text-center">
+      <!-- <div class="banner-text text-center">
         <a href="#contact" class="btn btn-appoint">Selanjutnya >></a>
-      </div>
+      </div> -->
   </section>
 
 

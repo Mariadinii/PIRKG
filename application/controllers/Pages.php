@@ -8,6 +8,8 @@
 			//Title page capital letter to begin with 
 			$data['title'] = ucfirst($page);
 
+			$data['pages'] = $this->page_model->get_posts();
+
 			$this->load->view('templates/header');
 			$this->load->view('pages/'.$page, $data);
 			$this->load->view('templates/footer');
