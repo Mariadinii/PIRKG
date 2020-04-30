@@ -1,4 +1,4 @@
-<!--service-->
+<!-- service -->
   <section id="service" class="section-padding">
     <div class="container">
       <div class="row">
@@ -60,7 +60,7 @@
       </div>
     </div>
   </section>
-  <!--/ service-->
+  <!-- /service -->
 
   <!--cta-->
   <section id="cta-1" class="section-padding">
@@ -70,8 +70,51 @@
           <h2 class="ser-title">Artikel Kesehatan Gigi</h2>
           <hr class="botm-line">
         </div>
+
+        <!-- Artikel Home -->
         <div class="schedule-tab">
+
+          <?php 
+            $post = 0; 
+            foreach ($pages as $page) :
+              $post = $post+1;
+          ?>
+
+          <?php if($post === 1): ?>
           <div class="col-md-4 col-sm-4 bor-left">
+            <div class="mt-boxy-color"></div>
+            <div class="medi-info">
+              <h3><?php echo $page['judul']; ?>l</h3>
+              <p><?php echo word_limiter($page['isi'], 19); ?></p>
+              <a href="<?php echo site_url('/posts/'.$page['id_artikel']); ?>" class="medi-info-btn">Selengkapnya</a>
+            </div>
+          </div>
+
+          <?php elseif($post === 2): ?>
+          <div class="col-md-4 col-sm-4">
+            <div class="medi-info">
+              <h3><?php echo $page['judul']; ?></h3>
+              <p><?php echo word_limiter($page['isi'], 19); ?></p>
+              <a href="<?php echo site_url('/posts/'.$page['id_artikel']); ?>" class="medi-info-btn">Selengkapnya</a>
+            </div>
+          </div>
+
+          <?php elseif($post === 3): ?>
+          <div class="col-md-4 col-sm-4">
+            <div class="mt-boxy-color"></div>
+            <div class="end-info">
+              <h3><?php echo $page['judul']; ?></h3>
+              <p><?php echo word_limiter($page['isi'], 19); ?></p>
+              <a href="<?php echo site_url('/posts/'.$page['id_artikel']); ?>" class="medi-info-btn">Selengkapnya</a>
+            </div>
+          </div>
+
+          <?php endif; ?>
+
+
+          <?php endforeach; ?>
+
+<!--           <div class="col-md-4 col-sm-4 bor-left">
             <div class="mt-boxy-color"></div>
             <div class="medi-info">
               <h3>Judul Artikel</h3>
@@ -79,6 +122,7 @@
               <a href="#" class="medi-info-btn">READ MORE</a>
             </div>
           </div>
+
           <div class="col-md-4 col-sm-4">
             <div class="medi-info">
               <h3>Judul Artikel</h3>
@@ -86,6 +130,7 @@
               <a href="#" class="medi-info-btn">READ MORE</a>
             </div>
           </div>
+
           <div class="col-md-4 col-sm-4">
             <div class="mt-boxy-color"></div>
             <div class="end-info">
@@ -93,9 +138,12 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <a href="#" class="medi-info-btn">READ MORE</a>
             </div>
-          </div>
+          </div> -->
+
         </div>
+        <!-- End Artikel Home -->
+
       </div>
     </div>
   </section>
-  <!--cta-->
+  <!--cta

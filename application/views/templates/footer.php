@@ -29,7 +29,9 @@
               <h4 class="white no-padding">&emsp;&emsp;Hubungi Kami</h4>
             </div>
             <div class="info-sec">
+
                 <p>&emsp;&emsp; 0852-7xxx-xxxx (Admin PIRKG)</p>
+
             </div>
           </div>
         </div>
