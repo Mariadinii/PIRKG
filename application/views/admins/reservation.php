@@ -85,7 +85,7 @@
   </div>
 </section>
 <!-- / form reservasi-->
-<!-- Jika bmum login maka tidak akan mengeluarkan form login-->
+<!-- Jika belum login maka tidak akan mengeluarkan form login-->
 <?php elseif(!$this->session->userdata('logged_in')): ?>
   <h2 class="ser-title" style="text-align: center;">Anda Harus Login Jika Ingin Mengisi Form Reservasi</h2>
 <!-- TAMPILAN ADMIN -->
@@ -98,8 +98,8 @@
     </div>
     <div class="col-md-0"></div>
     <div class="col-md-12">
-      <div class="time-info">
-        <table style="margin: 8px -200px 0px;" border="1">
+      <div class="reservation_admin">
+        <table>
           <thead>
             <tr>
               <th> No </th>
@@ -164,12 +164,14 @@
     </div>
     
     <!-- Keterangan kehadiran dokter-->
+    <div class="doctor_info">
     <?php echo form_open('admins/edit_dokter/14') ?>
       <input type="radio" name="admin_dokter" value="hadir"> Dokter Hadir
       <input type="radio" name="admin_dokter"  value="tidak hadir"> Dokter Tidak Hadir
       &nbsp;&nbsp;<input type="submit" value="Ubah Keterangan">
     <?php echo form_close()?>
-    
+    </div>
+
     <div class="col-md-3"></div>  
   </div>
 </section>
@@ -186,8 +188,8 @@
     </div>
   	<div class="col-md-2"></div>
     <div class="col-md-9">
-      <div class="time-info">
-        <table style="margin: 8px 0px 0px;" border="1">
+      <div class="reservation_user">
+        <table>
           <thead>
             <tr>
               <th>&nbsp; No &nbsp;</th>
