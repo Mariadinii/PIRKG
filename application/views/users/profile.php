@@ -9,12 +9,16 @@
         <div class="card__content-header">
           <div class="card__content-profile">
             <div class="card__content-profile-details">
-              <span class="card__content-profile-name"><?php echo $user['nama']; ?></span>
+
+              <h1 class="card__content-title">Tinjauan Akun</h1>
+              <p class="card__content-body">Profil</p>
+              <br>
             </div>
           </div>
         </div>
-        <h1 class="card__content-title">Tinjauan Akun</h1>
-        <p class="card__content-body">Profil</p>
+        
+        <span class="card__content-profile-name"><?php echo $user['nama']; ?></span>
+
       </div>
       <div class="card__footer">
         <table style="margin: 8px 0px 0px;">
