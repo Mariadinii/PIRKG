@@ -29,10 +29,7 @@
               <h4 class="white no-padding">&emsp;&emsp;Hubungi Kami</h4>
             </div>
             <div class="info-sec">
-              <ul class="social-icon">
-                <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
-                <li class="bglight-blue"><i class="fa fa-twitter"></i></li>
-              </ul>
+                <p>&emsp;&emsp; 0852-7xxx-xxxx (Admin PIRKG)</p>
             </div>
           </div>
         </div>

@@ -686,3 +686,96 @@ $yellow: #ffc229;
 .card__footer td {
     color: #b5b5b5;
 } 
+
+/*Artikel Selengkapnya*/
+.article_container {
+    width: 900px;
+    margin: auto;
+    margin-top: -18px;
+    margin-bottom: 20px;
+    border-top: 3px solid #0cb8b5;
+    border-bottom: 3px solid #0cb8b5;
+    border-right: 3px solid #0cb8b5;
+    border-left: 3px solid #0cb8b5;
+}
+
+.judul {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+    color: #000;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.post-date {
+    padding: 10px;
+    color: #0cb8b5;
+    font-size: 12px;
+}
+
+.post-body {
+    padding: 10px;
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #000;
+}
+
+.post-body p {
+    text-align: justify;
+}
+/*Artikel Selengkapnya*/
+
+/*Tabel Reservasi*/
+.reservation_admin {
+    overflow: auto;
+}
+
+.reservation_admin table {
+    border: 3px solid #e8e8e8;
+    border-collapse: collapse;
+    margin: auto;
+    width: 1100px;
+    max-width: 1100px;
+    margin-bottom: 5px;
+}
+
+.reservation_user table {
+    border: 3px solid #e8e8e8;
+    border-collapse: collapse;
+    margin: auto;
+    width: 1100px;
+    max-width: 1100px;
+    position: relative;
+    left: -185px;
+}
+
+.reservation_admin th, .reservation_admin td, .reservation_user th, .reservation_user td {
+    padding: 5px;
+    border: 2px solid #e8e8e8;
+}
+
+.reservation_admin th, .reservation_user th {
+    text-align: center;
+    font-size: 14px;
+}
+
+.reservation_admin td, .reservation_user td {
+    text-align: left;
+    font-size: 14px;
+}
+/*Tabel Reservasi*/
+
+/*Keterangan Kehadiran Dokter*/
+.doctor_info {
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+}
+
+.doctor_info input[type=radio] {
+    font-family: 'Open Sans',Poppins-Regular;
+    margin-left: 10px;
+}
+/*Keterangan Kehadiran Dokter*/
