@@ -25,9 +25,9 @@
 			<input type="password" name="password" class="form_login" placeholder="Katasandi" required autofocus>
 
 			<br><br>
-			<div class="text">
-				<a href="#">Lupa kata sandi?</a>
-			</div>
+			
+				<p style="text-align: center;">Jika anda lupa kata sandi, silahkan hubungi admin.</p>
+			
 			<button type="submit" class="tombol_login">Masuk</button>
 			<br>
 			<br>
