@@ -249,9 +249,9 @@
     foreach ($users as $user) {
       if ($user['id_pengguna'] ==='14') {
         if ($user['admin_dokter'] === 'hadir') {
-           echo '<h1 style="text-align: center;">Dokter Hadir</h1>';
+           echo '<h1 style="text-align: center;">Hari Ini Dokter Hadir</h1>';
         }else{
-           echo '<h1 style="text-align: center;">Dokter Tidak Hadir</h1>';
+           echo '<h1 style="text-align: center;">Dokter Tidak Hadir Hari Ini</h1>';
         }
       }
     }
