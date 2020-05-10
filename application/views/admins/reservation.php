@@ -11,13 +11,26 @@
       </div>
       <div class="col-md-3 col-sm-3 marb20"></div>
       <div class="col-md-6 col-sm-6 marb20">
+        <div class="more-features-box-text">
+                <h3>Ketentuan :</h3>
+                <p>&#9658; Jarak tiap pemesanan harus satu jam setelah pemesanan sebelumnya</p>
+                <p>&#9658; Waktu dan Tanggal harus melewati waktu dan tanggal sekarang </p>
+                <p>&#9658; Pengguna harus mendaftar 2 jam sebelum pertemuan berlangsung </p>
+                <p>&#9658; Jika tidak memenuhi semua ketentuan diatas, maka pemesanan akan ditolak oleh admin </p>
+                <p>&#9658; Jika pemesanan sudah dikonfirmasi maka pengguna akan di SMS melalui nomor telepon yang tertera pada profile </p>
+                <p>&#9658; Jika pengguna tidak datang pada pemesanan yang sudah dipesan maka pengguna akan dilarang mendaftar selama 1 minggu </p>
+            </div>
         <div class="contact-info">
-          <div class="space"></div>
+          <div class="space">
+            
+          </div>
           <div id="sendmessage">Reservasi Anda sudah Kami terima. Mohon tunggu konfirmasi selanjutnya.</div>
           <div id="errormessage"></div>
 
           <!-- Start Form -->
           <?php echo form_open('admins/reservation'); ?>
+
+
 
             <!-- Nama -->
             <label>Nama: </label>
@@ -74,6 +87,8 @@
             <div class="form-action">
               <button type="submit" class="btn btn-form">Pesan Reservasi</button>
             </div>
+
+            
 
           <?php echo form_close(); ?>
           <!-- End Form -->
@@ -234,9 +249,9 @@
     foreach ($users as $user) {
       if ($user['id_pengguna'] ==='14') {
         if ($user['admin_dokter'] === 'hadir') {
-           echo '<h1 style="text-align: center;">Dokter Hadir</h1>';
+           echo '<h1 style="text-align: center;">Hari Ini Dokter Hadir</h1>';
         }else{
-           echo '<h1 style="text-align: center;">Dokter Tidak Hadir</h1>';
+           echo '<h1 style="text-align: center;">Dokter Tidak Hadir Hari Ini</h1>';
         }
       }
     }

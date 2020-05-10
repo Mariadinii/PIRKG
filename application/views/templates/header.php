@@ -69,7 +69,7 @@
               <!-- welcome message-->
               <h1 style="color: white;">Selamat Datang Pada Website Kami</h1>
               <br><br><br>
-              <h3 style="color: #e6e3e3; letter-spacing: 2px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac finibus magna, quis tincidunt enim. Fusce ac condimentum velit, nec mollis ante. Sed finibus mattis odio, quis dictum sem viverra vel. Pellentesque ut nisi nunc. Aenean gravida gravida mi, quis molestie lorem lobortis ut. Phasellus posuere placerat diam, vel pretium metus mollis sit amet.</h3>
+              <h3 style="color: #e6e3e3; letter-spacing: 2px;">PIRKG merupakan website informasi dan reservasi kesehatan gigi Klinik Drg. Norman Fajeri. PIRKG hadir untuk memberikan wawasan mengenai pentingnya menjaga kesehatan gigi dan mulut. Selain itu PIRKG juga memberikan fasilitas seperti pemesanan reservasi untuk menemui Drg. Norman Fajeri dalam penanganan kesehatan dan pemeliharaan gigi.</h3>
               
               <a href="#service"><i class="fa fa-angle-down"></i></a>
             </div>

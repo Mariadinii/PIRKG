@@ -53,30 +53,27 @@
         <div class="contact-info">
           <h3 class="cnt-ttl">Mempunyai pertanyaan seputar gigi?</h3>
           <div class="space"></div>
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-            <div class="form-group">
-              <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Nama" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-              <div class="validation"></div>
+      
+            <div class="more-features-box-text">
+                <h3>Q :</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae vestibulum nulla, in consectetur nisl. Suspendisse maximus id dolor ut ultricies. Aliquam ac tempor nulla. Etiam a pulvinar est. </p>
             </div>
-            <div class="form-group">
-              <input type="email" class="form-control br-radius-zero" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control br-radius-zero" name="subject" id="subject" placeholder="Subjek" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control br-radius-zero" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
+            <div class="more-features-box-text">
+                <h3>A :</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae vestibulum nulla, in consectetur nisl. Suspendisse maximus id dolor ut ultricies. Aliquam ac tempor nulla. Etiam a pulvinar est. </p>
             </div>
 
-            <div class="form-action">
-              <button type="submit" class="btn btn-form">Kirim</button>
+            <br><br>
+
+            <div class="more-features-box-text">
+                <h3>Q : </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae vestibulum nulla, in consectetur nisl. Suspendisse maximus id dolor ut ultricies. Aliquam ac tempor nulla. Etiam a pulvinar est. </p>
             </div>
-          </form>
+            <div class="more-features-box-text">
+                <h3>A : </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae vestibulum nulla, in consectetur nisl. Suspendisse maximus id dolor ut ultricies. Aliquam ac tempor nulla. Etiam a pulvinar est. </p>
+            </div>
+
         </div>
       </div>
     </div>
